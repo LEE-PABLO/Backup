@@ -1,6 +1,10 @@
 package Fruit;
 
 public class Fruit {
-  protected String seed;
-  void reproduce() {}
+	protected final String color;
+    protected String seed;
+    protected Fruit(String color){this.color=color;}
+    void reproduce() {}
+    protected Nutrition getNutrients() {return new Nutrition();}
 }
+
