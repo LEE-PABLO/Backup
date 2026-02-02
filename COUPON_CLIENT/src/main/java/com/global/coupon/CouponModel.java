@@ -12,7 +12,7 @@ public class CouponModel {
 	public static void getCoupon(HttpServletRequest req) throws IOException, InterruptedException {
 		HttpClient client =HttpClient.newHttpClient();
 		HttpRequest request=HttpRequest.newBuilder()
-										.uri(URI.create("http://localhost:8081/COUPON_SERVER/api/v1/coupon"))
+										.uri(URI.create("http://192.168.0.27:8081/COUPON_SERVER/api/v1/coupon"))
 										.GET()
 										.build();
 		HttpResponse<String> response=client.send(request, HttpResponse.BodyHandlers.ofString());
