@@ -1,0 +1,6 @@
+sky: 3
+mountain: 1
+moon: 1
+star: 1
+earth: 1
+sea: 2
